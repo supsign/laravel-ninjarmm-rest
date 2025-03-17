@@ -1,5 +1,61 @@
 {
-    "packages": [],
+    "packages": [
+        {
+            "name": "supsign/base-api",
+            "version": "1.2",
+            "version_normalized": "1.2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/supsign/base-api.git",
+                "reference": "da5a76cf6b2bf1114f5f0b621ea6475a1ce5b111"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/supsign/base-api/zipball/da5a76cf6b2bf1114f5f0b621ea6475a1ce5b111",
+                "reference": "da5a76cf6b2bf1114f5f0b621ea6475a1ce5b111",
+                "shasum": ""
+            },
+            "time": "2025-03-10T07:55:36+00:00",
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "aliases": {
+                        "BaseApi": "Supsign\\Laravel\\BaseApi"
+                    },
+                    "providers": [
+                        "Supsign\\Laravel\\BaseApiServiceProvider"
+                    ]
+                }
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Supsign\\Laravel\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Florian Ratz",
+                    "email": "florian.ratz@supsign.ch"
+                }
+            ],
+            "description": "Laravel Extension for APIs",
+            "keywords": [
+                "api",
+                "composer",
+                "laravel"
+            ],
+            "support": {
+                "issues": "https://github.com/supsign/base-api/issues",
+                "source": "https://github.com/supsign/base-api/tree/1.2"
+            },
+            "install-path": "../supsign/base-api"
+        }
+    ],
     "dev": true,
     "dev-package-names": []
 }

@@ -21,5 +21,8 @@
                 "NinjaRMM": "Supsign\\Laravel\\NinjaRMM"
             }
         }
+    },
+    "require": {
+        "supsign/base-api": "^1.2"
     }
 }

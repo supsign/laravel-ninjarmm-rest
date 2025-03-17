@@ -6,5 +6,5 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
-    'Supsign\\Laravel\\' => array($baseDir . '/src'),
+    'Supsign\\Laravel\\' => array($baseDir . '/src', $vendorDir . '/supsign/base-api/src'),
 );

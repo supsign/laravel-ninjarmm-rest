@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit8d6c6a2531813e1277f875b7295d6871
+class ComposerStaticInit5d971437aad064ca19b83c8443776eec
 {
     public static $prefixLengthsPsr4 = array (
         'S' => 
@@ -17,6 +17,7 @@ class ComposerStaticInit8d6c6a2531813e1277f875b7295d6871
         'Supsign\\Laravel\\' => 
         array (
             0 => __DIR__ . '/../..' . '/src',
+            1 => __DIR__ . '/..' . '/supsign/base-api/src',
         ),
     );
 
@@ -27,9 +28,9 @@ class ComposerStaticInit8d6c6a2531813e1277f875b7295d6871
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit8d6c6a2531813e1277f875b7295d6871::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit8d6c6a2531813e1277f875b7295d6871::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInit8d6c6a2531813e1277f875b7295d6871::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit5d971437aad064ca19b83c8443776eec::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit5d971437aad064ca19b83c8443776eec::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit5d971437aad064ca19b83c8443776eec::$classMap;
 
         }, null, ClassLoader::class);
     }
