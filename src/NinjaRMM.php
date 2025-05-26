@@ -16,9 +16,19 @@ class NinjaRMM extends BaseApi
         $this->clientSecret = env('NINJA_REST_CLIENT_SECRET');
     }
 
+    public function getDeviceCustomFields(): array
+    {
+        return $this->makeCall('device-custom-fields');
+    }
+
     public function getDevices(): array
     {
         return $this->makeCall('devices');
+    }
+
+    public function getDevicesDetailed(): array
+    {
+        return $this->makeCall('devices-detailed');
     }
 
     public function getOrganizations(): array
@@ -34,6 +44,11 @@ class NinjaRMM extends BaseApi
     public function getRoles(): array
     {
         return $this->makeCall('roles');
+    }
+
+    public function searchDevices(string $query): array
+    {
+        return $this->makeCall('devices/search', ['q' => $query])->devices;
     }
 
     protected function getBearerToken(): string
